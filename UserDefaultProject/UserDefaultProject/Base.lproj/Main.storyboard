@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="UserDefaultProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="erT-J7-eFQ">
+                                <rect key="frame" x="20" y="267" width="374" height="87"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="87" id="fPJ-aY-wpm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="56"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IRi-ff-Med">
+                                <rect key="frame" x="140" y="458" width="135" height="55"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="55" id="gcT-QS-ras"/>
+                                </constraints>
+                                <state key="normal" title="カウントアップ"/>
+                                <connections>
+                                    <action selector="didClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pLk-xJ-ttp"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="erT-J7-eFQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="Jvx-uw-WkT"/>
+                            <constraint firstItem="IRi-ff-Med" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="140" id="MIY-aM-ggg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="IRi-ff-Med" secondAttribute="bottom" constant="349" id="ROB-Pw-T8H"/>
+                            <constraint firstItem="erT-J7-eFQ" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="223" id="ijP-1c-t7W"/>
+                            <constraint firstItem="erT-J7-eFQ" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="uNC-Wx-4Ii"/>
+                            <constraint firstItem="erT-J7-eFQ" firstAttribute="centerX" secondItem="IRi-ff-Med" secondAttribute="centerX" id="wR6-R3-jkN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="label" destination="erT-J7-eFQ" id="XSY-QI-GFI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>

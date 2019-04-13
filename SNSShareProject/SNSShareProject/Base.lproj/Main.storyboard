@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SNSShareProject" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cat" translatesAutoresizingMaskIntoConstraints="NO" id="8R3-sj-ABf">
+                                <rect key="frame" x="44" y="143" width="327" height="330"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ixn-fg-eaS">
+                                <rect key="frame" x="117" y="550" width="181" height="73"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="73" id="j1X-Rv-VOx"/>
+                                </constraints>
+                                <state key="normal" title="シェア"/>
+                                <connections>
+                                    <action selector="didClickButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="7Fz-2O-pmm"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ixn-fg-eaS" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="117" id="Ajd-LL-tcC"/>
+                            <constraint firstItem="8R3-sj-ABf" firstAttribute="centerX" secondItem="Ixn-fg-eaS" secondAttribute="centerX" id="JH0-dj-eem"/>
+                            <constraint firstItem="Ixn-fg-eaS" firstAttribute="top" secondItem="8R3-sj-ABf" secondAttribute="bottom" constant="77" id="LWl-U3-apW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="Ixn-fg-eaS" secondAttribute="bottom" constant="239" id="MvY-6b-lWV"/>
+                            <constraint firstItem="8R3-sj-ABf" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="99" id="N6t-MJ-dOz"/>
+                            <constraint firstItem="8R3-sj-ABf" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="en0-Pl-VHF"/>
+                            <constraint firstItem="8R3-sj-ABf" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="44" id="mTJ-wq-0tI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="imageView" destination="8R3-sj-ABf" id="ME6-MC-BZ5"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="127"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="cat" width="1600" height="900"/>
+    </resources>
+</document>
